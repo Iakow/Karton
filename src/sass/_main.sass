@@ -1,0 +1,162 @@
+.main
+  position: relative
+  padding-top: 35px
+  padding-bottom: 60px
+  background: #373737 url(../img/main/main-bg.jpg) center no-repeat
+  background-size: cover
+  color: $text-color-light
+  &::before
+    content: ''
+    display: block
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.6)
+    z-index: 0
+
+.main__text
+  padding-right: 30px
+  &--title
+    font-size: 41px
+    font-weight: 700
+    line-height: 42px
+    margin-bottom: 10px
+  &--subtitle
+    margin-bottom: 27px
+    font-size: 28px
+    font-weight: 300
+
+.main-fig
+  position: relative
+  z-index: 1
+  left: 20px
+  top: 20px
+  img
+    max-width: 110%
+    position: relative
+    left: -60px
+
+.main-form
+  background: rgba(#fff, 0.2)
+  padding: 30px 27px 
+  margin-right: 79px
+
+.main-form__title
+  font-size: 20px
+  font-weight: 300
+  line-height: 32px
+  margin-bottom: 19px
+  opacity: 0.9
+  &--important
+    font-weight: 700
+    display: block
+    text-transform: uppercase
+
+.main-form__input
+  border-radius: 4px
+  border: none
+  padding: 19px
+  vertical-align: middle
+  width: 64%
+  margin-right: 10px
+  
+.main-form__note
+  display: inline-block
+  margin-top: 8px
+  padding-left: 20px
+  opacity: 0.7
+
+
+@media (max-width: 1200px)
+  .main
+    &__text
+      &--title
+        font-size: 30px
+        font-weight: 600
+        line-height: 34px
+        margin-bottom: 16px
+      &--subtitle
+        font-size: 20px
+
+  .main-form
+    padding: 13px 18px
+    &__title
+      font-size: 16px
+      line-height: 28px
+      margin-bottom: 15px
+      &--important
+        padding-left: 10px
+        margin-top: 10px
+        font-size: 16px
+    &__input
+      padding: 17px
+      width: 66%
+      margin-right: 5px
+    &__note
+      margin-top: 2px
+      padding-left: 3px
+    &__button
+      padding: 16px 10px
+      font-size: 14px
+
+
+@media (max-width: 992px)
+  .main
+    background-size: cover
+    background-position: 28%
+    padding-top: 70px
+    &::before
+      background-color: rgba(0, 0, 0, 0.7)
+    &__text
+      text-align: center
+      padding: 0
+      &--title
+        color: #ff9d00
+        font-size: 22px
+        font-weight: 700
+        line-height: 24px
+      &--subtitle
+        color: #ffffff
+        font-size: 18px
+        font-weight: 300
+  .main-fig
+    display: none
+
+  .main-form
+    background: transparent
+    padding: 0 
+    margin-right: 0
+    text-align: center
+    &__title
+      font-size: 15px
+      font-weight: 300
+      line-height: 18px
+      padding-right: 0
+      margin-bottom: 19px
+      &--important
+        margin-top: 14px
+    &__input
+      width: 66%
+      margin-bottom: 13px
+      border-radius: 3px
+      text-align: center
+      font-size: 12px
+    &__note
+      padding: 0
+      margin-top: 14px
+      font-size: 12px
+      font-weight: 200
+      opacity: 1
+
+  .main-form__button
+    display: block
+    margin: auto
+
+
+@media (max-width: 576px)
+  .main-form
+    &__input
+      width: 100%
+    

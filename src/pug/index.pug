@@ -1,0 +1,510 @@
+doctype
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		meta(mame="Description" content="Karton")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no")
+
+		link(rel="icon" href="/img/favicon.ico" type="image/x-icon")
+		link(rel="shortcut icon" href="/img/favicon.ico" type= "image/x-icon")
+		link(rel="stylesheet" href="css/style.css")
+		link(rel="stylesheet" href="css/libs.css")
+		link(href!="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&amp;subset=cyrillic" rel="stylesheet")
+		
+
+		title Good Картончик
+
+	body
+
+		header.header
+			.container
+				.row.align-items-center.justify-content-end.no-gutters
+					.col-4.col-md-4
+						div.header-logo
+
+					.col-6.col-lg-5.col-md-4.col-sm-4
+						div.header-contacts
+							div.header-contacts__phone 
+								|8 (347) 
+								span.xs-hidden 271-54-28
+								span.xs-visual.xs-header-phone--bold 271 54 28
+							div.header-contacts__phone 
+								|8 (937) 
+								span.xs-hidden 363-30-00
+								span.xs-visual.xs-header-phone--bold 363 30 00
+					.col.col-md
+						button.button.header-button
+							img(src="img/icon-phone.png" alt="Телефон") 
+							span.xs-hidden
+								| Заказать звонок
+
+
+		section.main
+			.container
+				.row.align-items-center
+					.col-md-5
+						div.main-fig.animated.bounceIn
+							img(src='img/main/main-img2.png' alt='Картон')
+
+					.col-md-12.col-lg-7
+						div.main__text
+							h1.main__text--title 
+								| Производство упаковки из гофрокартона
+							div.main__text--subtitle 
+								| с доставкой по всей России
+
+						div.main-form
+							div.main-form__title 
+								| Получите индивидуальное предложение <br> на производство и поставку гофропродукции 
+								span.main-form__title--important 
+									| Образцы упаковки бесплатно!
+
+							form(action='#')
+								input.main-form__input(type='tel' placeholder='Введите номер телефона')
+								button.button.button--big.main-form__button(type='submit') 
+									| Оставить заявку!
+									
+							small.main-form__note  
+								| *Минимальный заказ 500 шт
+
+
+		section.features
+			.container
+				.row.align-items-start
+					.col
+						div.features-accent
+							p.features-accent__big 
+								| 5 лет
+							p.features-accent__simple 
+								| На рынке изделий из гофрокартона
+
+					//features-accent
+					.col-md-6.col-xl-4
+						div.features-accent
+							p.features-accent__big 
+								| до 5 000 000 м<sup>2</sup>
+							p.features-accent__simple 
+								| Ежемесячный объем производства гофрокартона
+
+					//features-accent
+					.col
+						.features-accent
+							p.features-accent__big 
+								| 4 000 м<sup>2</sup>
+							p.features-accent__simple 
+								| Площадь склада
+
+				.row
+					//features-card-1
+					.col-xl-4.col-md-6
+						div.features-card.wow.fadeInUp(data-wow-offset="0" data-wow-delay='0.1s')
+							.row.align-items-center
+								.col-3
+									div.features-card__pic
+										img.lazy(data-src='img/features/production.png', alt='production')
+									
+								.col-9
+									h3.features-card__title 
+										| Собственное производство
+									p.features-card__descr 
+										| 4 технологические линии способны выполнить любой заказ любой сложности
+
+					//features-card-2
+					.col-xl-4.col-md-6
+						.features-card.wow.fadeInUp(data-wow-delay='0.2s')
+							.row.align-items-center
+								.col-3
+									div.features-card__pic
+										img.lazy(data-src='img/features/free_samples.png', alt='free_samples')
+
+								.col-9
+									h3.features-card__title 
+										| Бесплатные образцы
+									p.features-card__descr 
+										| Бесплатно делаем образцы гофроупаковки - это помогает заранее увидеть упаковку
+
+					//features-card-3
+					.col-xl-4.col-md-6
+						div.features-card.wow.fadeInUp(data-wow-delay='0.3s')
+							.row.align-items-center
+								.col-3
+									div.features-card__pic
+										img.lazy(data-src='img/features/stable_quality.png', alt='stable_quality')
+
+								.col-9
+									h3.features-card__title 
+										| Стабильное качество
+									p.features-card__descr 
+										| Собственная лаборатория контролирует качество на каждом этапе производства
+
+				
+					//features-card-4
+					.col-xl-4.col-md-6
+						div.features-card.wow.fadeInUp(data-wow-delay='0.4s')
+							.row.align-items-center
+								.col-3
+									div.features-card__pic
+										img.lazy(data-src='img/features/insurance_stock.png', alt='insurance_stock')
+
+								.col-9
+									h3.features-card__title 
+										| Страховой запас
+									p.features-card__descr 
+										| Можем хранить запас гофропродукции на своих складах и поставлять его партиями
+
+					//features-card-5
+					.col-xl-4.col-md-6
+						div.features-card.wow.fadeInUp(data-wow-delay='0.5s')
+							.row.align-items-center
+								.col-3
+									div.features-card__pic
+										img.lazy(data-src='img/features/flexo_printing.png', alt='flexo_printing')
+
+								.col-9
+									h3.features-card__title 
+										| Флексопечать
+									p.features-card__descr 
+										| Возможно нанесение вашего логотипа, текста или манипуляционных знаков
+
+					//features-card-6
+					.col-xl-4.col-md-6
+						div.features-card.wow.fadeInUp(data-wow-delay='0.6s')
+							.row.align-items-center
+								.col-3
+									div.features-card__pic
+										img.lazy(data-src='img/features/hydrophobic_additives.png',alt='hydrophobic_additives')
+
+								.col-9
+									h3.features-card__title 
+										| Гидрофобные добавки
+									p.features-card__descr 
+										| На производстве реализована технология, которая позволяет гофрокартону стать прочнее
+
+
+		section.production
+			.container
+				//production__title
+				div.production__title.wow.fadeInUp
+					h3 
+						| Наша продукция
+					img.xs-hidden(src="img/production/wavy-line-clipart-picture-gif-png-icon-image-hd-48.png", alt="")
+
+				.row.align-items-end
+					// production-card 1
+					.col-md-6
+						div.production-card
+							div.production-card__image
+								img.lazy(data-src="img/production/production-1.jpg", alt="production-1")
+							div.production-card__description 
+								| Гофрокороб 4-х клапанный
+							div.production-card__buttons
+								button.button.button-o.production-button Подробнее
+								button.button.production-button Получить расчет
+
+					//production-card 2
+					.col-md-6
+						div.production-card
+							div.production-card__image
+								img.lazy(data-src="img/production/production-2.jpg", alt="production-2")
+							div.production-card__description 
+								| Гофролоток
+							div.production-card__buttons
+								button.button.button-o.production-button 
+									| Подробнее
+								button.button.production-button 
+									| Получить расчет
+
+				.row.align-items-end
+					// production-card 3
+					.col-md-6
+						div.production-card
+							div.production-card__image
+								img.lazy(data-src="img/production/production-3.jpg", alt="production-3")
+							div.production-card__description 
+								| Гофрокороб самосборный (сложная высечка)
+							div.production-card__buttons 
+								button.button.button-o.production-button 
+									| Подробнее
+								button.button.production-button 
+									| Получить расчет
+
+					// production-card 4
+					.col-md-6
+						div.production-card
+							div.production-card__image
+								img.lazy(data-src="img/production/production-4.jpg", alt="production-4")
+							div.production-card__description 
+								| Листовой гофрокартон
+							div.production-card__buttons
+								button.button.button-o.production-button 
+									| Подробнее
+								button.button.production-button 
+									| Получить расчет
+
+
+		section.offer.lazy(data-src='img/offer/offer-bg.jpg')
+			h2.offer-text__offer 
+				| Получите индивидуальное предложение
+				span на производство и поставку изделий
+			
+			form.offer-form(action='#')
+				div.offer-form__descr 
+					| Введите ваш номер телефона:
+				input.offer-form__input(type='tel', placeholder='+7 (XX) XXX-XX-XX ')
+				button.button.button--bigger Оставить заявку!
+
+			div.offer-text__note 
+				| *Минимальный заказ 500шт
+
+
+		section.photos.container
+				.row
+					.col-md-5.order-md-2
+						.photos-description
+							h2.photos-description__title 
+								| Производство
+							.photos-description__text
+								p 
+									| Современное оборудование позволяет производить до 5 миллионов квадратных метров гофрокартона ежемесячно. Гофрокороба и лотки производятся по ГОСТу или чертежам заказчика.
+								p 
+									| Досконально прорабатываем конструкции коро- бов и составы сырья, учитывая условия хранения, транспортировки и производства вашей продукции.
+								p 
+									| Возможно нанесение цветной флексопечати на поверхность коробов.
+
+					.col-md-7.order-md-1
+						.slider
+							.slider__view
+								.slide
+									img.lazy(data-src='img/photos/1.jpg', alt='photo1')
+								.slide
+									img.lazy(data-src='img/photos/2.jpg', alt='photo2')
+								.slide
+									img.lazy(data-src='img/photos/3.jpg', alt='photo3')
+								.slide
+									img.lazy(data-src='img/photos/4.jpg', alt='photo4')
+								.slide
+									img.lazy(data-src='img/photos/5.jpg', alt='photo5')
+
+							.slider__previews.xs-hidden
+								.slider__preview
+									img(src='img/photos/small/1.jpg', alt='')
+								.slider__preview
+									img(src='img/photos/small/2.jpg', alt='')
+								.slider__preview
+									img(src='img/photos/small/3.jpg', alt='')
+								.slider__preview
+									img(src='img/photos/small/4.jpg', alt='')
+								.slider__preview
+									img(src='img/photos/small/5.jpg', alt='')
+
+							button.slider-button.prevArrow
+							button.slider-button.nextArrow
+
+		section.clients
+			.container
+				.clients__titile
+					h2 Наши клиенты
+					img.lazy.xs-hidden(data-src='img/client/wavy-line.png', alt='')
+
+				.row.no-gutters
+					.col-6.col-md-4.col-lg-3
+						.clients__card
+							img.lazy(data-src='img/client/1.png', alt='')
+					.col-6.col-md-4.col-lg-3
+						.clients__card
+							img.lazy(data-src='img/client/2.png', alt='')
+					.col-6.col-md-4.col-lg-3
+						.clients__card
+							img.lazy(data-src='img/client/3.png', alt='')
+					.col-6.col-md-4.col-lg-3
+						.clients__card
+							img.lazy(data-src='img/client/4.png', alt='')
+
+
+					.col-6.col-md-4.col-lg-3
+						.clients__card
+							img.lazy(data-src='img/client/5.png', alt='')
+					.col-6.col-md-4.col-lg-3
+						.clients__card
+							img.lazy(data-src='img/client/6.png', alt='')
+					.col-6.col-md-4.col-lg-3
+						.clients__card
+							img.lazy(data-src='img/client/7.png', alt='')
+					.col-6.col-md-4.col-lg-3
+						.clients__card
+							img.lazy(data-src='img/client/8.png', alt='')
+
+
+					.col-6.col-md-4.col-lg-3
+						.clients__card
+							img.lazy(data-src='img/client/9.png', alt='')
+					.col-6.col-md-4.col-lg-3
+						.clients__card
+							img.lazy(data-src='img/client/10.png', alt='')
+					.col-6.col-md-4.col-lg-3
+						.clients__card
+							img.lazy(data-src='img/client/11.png', alt='')
+					.col-6.col-md-4.col-lg-3
+						.clients__card
+							img.lazy(data-src='img/client/12.png', alt='')
+
+		section.feedback
+			.container
+				.feedback__title
+					h2 Отзывы о сотрудничестве
+					img.lazy.xs-hidden(data-src='img/client/wavy-line.png', alt='')
+
+				.feedback-slider
+					.feedback__scans
+						.feedback__scan
+							a(data-fancybox='gallery', href='img/feedback/big/1.jpg')
+								img(src='img/feedback/1.jpg', alt='')
+						.feedback__scan
+							a(data-fancybox='gallery', href='img/feedback/big/2.jpg')
+								img(src='img/feedback/2.jpg', alt='')
+						.feedback__scan
+							a(data-fancybox='gallery', href='img/feedback/big/3.jpg')
+								img(src='img/feedback/3.jpg', alt='')
+						.feedback__scan
+							a(data-fancybox-trigger='gallery', href='img/feedback/big/1.jpg')
+								img(src='img/feedback/1.jpg', alt='')
+						.feedback__scan
+							a(data-fancybox-trigger='gallery', href='img/feedback/big/2.jpg')
+								img(src='img/feedback/2.jpg', alt='')
+						.feedback__scan
+							a(data-fancybox-trigger='gallery', href='img/feedback/big/3.jpg')
+								img(src='img/feedback/3.jpg', alt='')
+
+					button.feedback-slider__button.feedback-next
+					button.feedback-slider__button.feedback-prev
+
+		section.contacts
+			.contacts-card
+				h2.contacts-card__title-main.xs-visual
+					| Контакты
+				.contacts-card__address
+					span.contacts-card__title 
+						| Адрес офиса
+					.contact-card__text 
+						| г. Уфа, Проспект октября, 46
+					span.contacts-card__title 
+						| Адрес склада
+					.contacts-card__text 
+						| г.Уфа, ул. Майкопская, 65/2
+
+				.contacts-card__phone 
+					span.contacts-card__title 
+						| Тел. отдела продаж:
+					.contacts-card__text 
+						| 8 (347) 271-54-28 
+						br 
+						| 8 (937) 363-30-00
+
+				.contacts-card__cta
+					button.contacts-card__button.button Заказать звонок
+				.contacts-card__mail
+					span.contacts-card__title Е-mail
+					.contacts-card__text
+						| urals.karton@gmail.com
+
+				img.contacts-card__ico.tel.xs-hidden(src='img/tel.png', alt='')
+				img.contacts-card__ico.map.xs-hidden(src='img/map.png', alt='')
+				img.contacts-card__ico.mail.xs-hidden(src='img/mail.png', alt='')
+
+			script(async='', src='https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A95283b61b8ca5231cd81919ef87d22f3dc50810191333034eca58f9ba6d8ab8e&width=103%25&height=660&lang=ru_UA&scroll=false')
+
+		footer.footer
+			p.footer__copyright
+				| Yakov Ponomarenko DEMO 2018 
+
+		div.overlay
+			div.popup
+				div.popup-title 
+					| Форма обратной связи
+				div.popup-close &times;
+				div.popup-form.lazy(data-src='img/modal_bg.jpg')
+					form(action='#')
+						div.popup-form__title 
+							| Получите индивидуальное предложение 
+							span на производство и поставку изделий
+						label.popup-form__label(for='phone') 
+							| Введите ваш номер телефона:
+						input.popup-form__input(type='tel' id='phone' required='' placeholder='+7 (XX) XXX-XX-XX')
+						button.button.button_big.popup-form__btn 
+							| Оставить заявку!
+						div.popup-form__note 
+							| *Минимальный заказ 500шт
+
+
+		script(src='js/libs.min.js')
+
+		script.
+			$(function() {
+				$('.lazy').Lazy();
+			});
+
+		script.
+			new WOW({
+				mobile: false
+			}).init();
+
+		script.
+			/* slider */
+			$(document).ready(function () {
+				$('.slider__view').slick({
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: false,
+					fade: true,
+					asNavFor: '.slider__previews',
+				});
+
+				$('.slider__previews').slick({
+					slidesToShow: 4,
+					slidesToScroll: 1,
+					asNavFor: '.slider__view',
+					prevArrow: '.prevArrow',
+					nextArrow: '.nextArrow',
+					dots: false,
+					centerMode: false,
+					focusOnSelect: true,
+					rows: 0 // fix problem with DIV
+				});
+
+				$('.feedback__scans').slick({
+					//infinite: true,
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					prevArrow: '.feedback-prev',
+					nextArrow: '.feedback-next',
+					responsive: [
+						{
+							breakpoint: 767,
+							settings: {
+								slidesToShow: 1,
+								slidesToScroll: 1,
+								prevArrow: '.feedback-prev',
+								nextArrow: '.feedback-next'
+							}
+						}
+					]
+				});
+			});
+
+		script.
+			/* modal */
+			$(document).ready(function(){
+				$(".header-button").on("click", function() {
+					$(".overlay").show();
+				});
+
+				$(".contacts-card__button").on("click", function() {
+					$(".overlay").show();
+				})
+
+				$('.popup-close').on("click", function(){
+					$('.overlay').hide();
+				})
+			});
+
+		

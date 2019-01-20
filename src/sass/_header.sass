@@ -1,0 +1,113 @@
+.header
+  padding-top: 40px
+  padding-bottom: 20px
+
+.header-logo
+  background: url(../img/header-logo.png) center no-repeat
+  height: 61px
+  width: 191px
+  margin-left: 17%
+
+.header-contacts
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  &__phone
+    margin-right: 18px
+    font-size: 22px
+    font-weight: 400
+    line-height: 22px
+    color: $text-color-dark
+    &:first-child
+      border-right: 1px solid #ccc
+      padding-right: 18px
+  
+.header-button
+  margin-left: 14px
+
+.xs-visual
+  display: none
+
+
+@media (max-width: 1200px)
+  .header-contacts__phone
+    font-size: 20px
+
+
+@media (max-width: 992px)
+  .header-contacts
+    display: block
+    float: right
+    &__phone
+      margin-right: 0
+      font-size: 18px
+      line-height: 24px
+      &:first-child
+        border-right: none
+        padding-right: 0
+
+  .header-button
+    float: right
+
+
+@media (max-width: 768px)
+  .header-logo
+    margin-left: 0
+
+  .header-contacts
+    &__phone
+      font-size: 16px
+
+  .header-button
+    padding: 14px
+    font-size: 12px
+
+
+@media (max-width: 576px)
+  .header
+    position: fixed
+    border-bottom: 1px solid grey
+    width: 100%
+    top: 0px
+    z-index: 50
+    padding-top: 10px
+    padding-bottom: 11px
+    padding-right: 0
+    background-color: #f4f4f4
+
+  .header-logo
+    background: $active-color url(../img/logo--mobile.png) center no-repeat
+    width: 36px
+    height: 35px
+    border-radius: 3px
+
+  .header-button
+    height: 27px
+    width: 27px
+    padding: 0
+    border-radius: 3px
+    img
+      height: 13px
+      width: 14px
+      display: block
+      margin: auto
+
+  .header-contacts
+    display: block
+    float: right
+    &__phone
+      margin-right: 0
+      font-size: 14px
+      line-height: 17px
+      &:first-child
+        border-right: none
+        padding-right: 0
+
+  .xs-hidden
+    display: none !important
+
+  .xs-visual
+    display: inline-block
+
+  .xs-header-phone--bold
+    font-weight: 800

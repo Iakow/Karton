@@ -1,0 +1,79 @@
+.features
+  background-color: #f4f4f4
+  padding-bottom: 55px
+
+.features-accent
+  text-align: center
+  margin-top: 50px
+  padding: 0 10%
+  &__big
+    font-size: 36px
+    color: #f39003
+    font-weight: 900
+    margin-bottom: 4px
+  &__simple
+    margin: 0px
+    font-size: 16px
+    color: $text-color-dark
+  
+.features-card
+  background-color: #fff
+  margin-top: 30px
+  padding-right: 5%
+  height: 80%
+  &__pic
+    margin-right: -30px
+    padding-left: 26px
+  &__title
+    font-size: 16px
+    font-weight: 700
+    margin-top: 28px
+    margin-bottom: 6px
+  &__descr
+    font-size: 15px
+    font-weight: 300
+    margin-top: 0px
+    margin-bottom: 26px
+  
+@media (max-width: 1200px)
+  .features-accent
+    padding: 0 10%
+
+@media (max-width: 992px)
+  .features-accent
+    padding: 0
+
+@media (max-width: 576px)
+  .features
+    padding-bottom: 40px
+    
+  .features-accent
+    text-align: center
+    margin-top: 24px
+    &__big
+      font-size: 30px
+    &__simple
+      font-size: 14px
+
+  .features-card
+    background-color: #fff
+    margin-top: 8px
+    height: auto
+    &__pic
+      margin-right: -16px
+      padding-left: 6px
+      float: right
+      img
+        width: 85%
+    &__title
+      font-size: 15px
+      font-weight: 700
+      margin-top: 22px
+      margin-bottom: 6px
+    &__descr
+      font-size: 14px
+      font-weight: 300
+      line-height: 18px
+      margin-top: 0px
+      margin-bottom: 21px
+  

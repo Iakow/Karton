@@ -1,0 +1,36 @@
+.button
+  font-size: 14px
+  background-color: $active-color
+  border: none
+  color: $text-color-light
+  padding: 13px 22px
+  border-radius: 5px
+  &:hover
+    background-color: lighten($active-color, 5)
+    cursor: pointer
+  img
+    width: 20px
+    height: 20px
+    vertical-align: middle
+    margin-right: 8px
+  &--big
+    padding-bottom: 18px
+    padding-top: 18px
+    vertical-align: middle
+    font-size: 15px
+  &--bigger
+    padding: 21px 30px
+    font-size: 15px
+  &-o
+    background-color: transparent
+    color: $text-color-dark
+    border: 1px solid $text-color-dark
+    opacity: 0.5
+
+@media (max-width: 576px)
+  .button
+    &--big
+      vertical-align: middle
+      font-size: 14px
+      border-radius: 4px
+      padding: 16px 24px

@@ -1,0 +1,56 @@
+.contacts
+  position: relative
+  overflow: hidden
+  >ymaps
+    //margin-left: -3%
+    margin-top: -40px
+    //margin-bottom: -60px
+  
+.contacts-card
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+  position: absolute
+  top: 16%
+  left: 20%
+  padding: 33px 34px 39px 62px
+  background-color: #fff
+  z-index: 10
+  &__title
+    display: block
+    font-size: 18px
+    font-weight: 700
+    margin: 10px auto 6px
+  &__text
+    font-size: 16px
+    font-weight: 300
+    margin-bottom: 10px
+  &__cta
+    padding: 8px 0
+  &__ico
+    position: absolute
+  .tel
+    top: 170px
+    left: 33px
+  .mail
+    top: 306px
+    left: 33px
+  .map
+    top: 46px
+    left: 33px
+
+@media (max-width: 576px)
+  .contacts
+    >ymaps
+      margin: 0
+
+  .contacts-card
+    position: static
+    text-align: center
+    padding: 36px 0 28px 0
+    &__title-main
+      margin: 0
+    &__phone
+      margin-top: 28px
+      line-height: 24px
+    &__text
+      font-size: 14px
+      

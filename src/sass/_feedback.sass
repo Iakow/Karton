@@ -1,0 +1,73 @@
+.feedback
+  background-color: #f4f4f4
+  padding-bottom: 60px
+  
+.feedback__title
+  text-align: center
+  padding-top: 30px
+  h2
+    font-size: 27px
+    font-weight: 700
+    line-height: 18px
+    text-transform: uppercase
+    margin-bottom: 9px
+
+.feedback-slider
+  position: relative
+
+.feedback__scans
+  width: 86%
+  margin: 20px auto
+.feedback__scan
+  a
+    &:focus
+      outline: none
+  img
+    margin-left: auto
+    margin-right: auto
+    cursor: pointer
+    
+.feedback-slider__button
+  position: absolute
+  height: 100%
+  width: 50px
+  border: none
+  top: 0px
+  &:hover
+    background-color: #e9e9e9
+    cursor: pointer
+
+.feedback-next
+  background: url(../img/feedback/next2.png) center no-repeat
+  right: 0px
+  
+.feedback-prev
+  background: url(../img/feedback/prev2.png) center no-repeat
+  left: 0px
+  
+
+@media (max-width: 576px)
+  .feedback
+    padding-bottom: 10px
+    &__title
+      padding-top: 12px
+      h2
+        font-size: 22px
+        font-weight: 700
+        line-height: 24px
+    
+  .feedback-slider__button
+    height: 20%
+    width: 22px
+    top: 40%
+    &:focus
+      outline: none
+    &:hover
+      background-color: $active-color
+      cursor: pointer
+
+  .feedback-next
+    background: $active-color url(../img/photos/next.png) center no-repeat
+    
+  .feedback-prev
+    background: $active-color url(../img/photos/back.png) center no-repeat
