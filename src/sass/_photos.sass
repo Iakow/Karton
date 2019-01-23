@@ -47,7 +47,7 @@
 
   &-button
     position: absolute
-    height: 94px
+    height: 96px
     width: 3.6%
     bottom: 0px
     border: 1px solid $active-color
@@ -64,6 +64,37 @@
   &:hover
     background: $active-color url(../img/photos/next.png) center no-repeat
 
+
+
+@media (max-width: 1200px)
+  .slider-button
+    height: 78px
+
+  .photos-description
+    padding-top: 0
+    margin-right: 4px
+    &__text
+      text-align: left
+
+@media (max-width: 992px)
+  .slider-button
+    height: 54px
+    width: 16px
+
+  .photos-description
+    padding-top: 0
+    margin-right: 0px
+
+  .photos-description__title
+    padding: 15px 18px 18px 30px
+    font-size: 24px
+
+  .photos-description__text
+    font-size: 14px
+    line-height: 18px
+
+@media (max-width: 768px)
+  /* Кнопки, тексты по центру, отрицателные марджини убрать, шрифты подобрать */
 
 @media (max-width: 576px)
   .photos
@@ -112,4 +143,3 @@
     background: $active-color url(../img/photos/next.png) center no-repeat
     right: 15px
       
-

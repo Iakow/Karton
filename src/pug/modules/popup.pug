@@ -1,0 +1,17 @@
+div.overlay
+  div.popup
+    div.popup-title
+      | Форма обратной связи
+    div.popup-close &times;
+    div.popup-form.lazy(data-src='img/modal_bg.jpg')
+      form(action='#')
+        div.popup-form__title
+          | Получите индивидуальное предложение
+          span на производство и поставку изделий
+        label.popup-form__label(for='phone')
+          | Введите ваш номер телефона:
+        input.popup-form__input(type='tel' id='phone' required='' placeholder='+7 (XX) XXX-XX-XX')
+        button.button.button_big.popup-form__btn
+          | Оставить заявку!
+        div.popup-form__note
+          | *Минимальный заказ 500шт
