@@ -76,6 +76,7 @@
     &__text
       text-align: left
 
+
 @media (max-width: 992px)
   .slider-button
     height: 54px
@@ -88,13 +89,28 @@
   .photos-description__title
     padding: 15px 18px 18px 30px
     font-size: 24px
-
+    width: 120%
   .photos-description__text
     font-size: 14px
     line-height: 18px
 
+
 @media (max-width: 768px)
-  /* Кнопки, тексты по центру, отрицателные марджини убрать, шрифты подобрать */
+  .slider-button
+    height: 75px
+    width: 19px
+
+  .photos-description__title
+    left: 0px
+    width: 100%
+    text-align: center
+  
+  .photos-description__text
+    font-size: 16px
+    font-weight: 300
+    line-height: 24px
+    text-align: justify
+
 
 @media (max-width: 576px)
   .photos
