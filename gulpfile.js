@@ -44,9 +44,11 @@ function serve (cb) {
       baseDir: "./src"
     }
   });
-  gulp.watch('src/pug/*.pug', goPug);
+  gulp.watch('src/pug/**/*.pug', goPug);
   gulp.watch('src/sass/*.sass', goSass);
-  gulp.watch("src/*.html").on('change', browserSync.reload);
+  gulp.watch('src/js/*.js').on('change', browserSync.reload);
+  gulp.watch('src/*.html').on('change', browserSync.reload);
+
   cb();
 }
 
@@ -62,9 +64,9 @@ function goSass () {
 
 function goPug () {
   return gulp.src('src/pug/index.pug')
-  .pipe(pug({pretty: true}))
-  .pipe(gulp.dest('src'))
-  .pipe(browserSync.stream());
+        .pipe(pug({pretty: true}))
+        .pipe(gulp.dest('src'))
+        .pipe(browserSync.stream());
 }
 
 function cleanDist () {

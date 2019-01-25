@@ -1,10 +1,10 @@
 section.photos.container
   .row
     .col-md-5.order-md-2
-      .photos-description
+      div.photos-description
         h2.photos-description__title
           | Производство
-        .photos-description__text
+        div.photos-description__text
           p
             | Современное оборудование позволяет производить до 5 миллионов квадратных метров гофрокартона ежемесячно. Гофрокороба и лотки производятся по ГОСТу или чертежам заказчика.
           p
@@ -13,29 +13,29 @@ section.photos.container
             | Возможно нанесение цветной флексопечати на поверхность коробов.
 
     .col-md-7.order-md-1
-      .slider
-        .slider__view
-          .slide
+      div.slider
+        div.slider__view
+          div.slide
             img.lazy(data-src='img/photos/1.jpg', alt='photo1')
-          .slide
+          div.slide
             img.lazy(data-src='img/photos/2.jpg', alt='photo2')
-          .slide
+          div.slide
             img.lazy(data-src='img/photos/3.jpg', alt='photo3')
-          .slide
+          div.slide
             img.lazy(data-src='img/photos/4.jpg', alt='photo4')
-          .slide
+          div.slide
             img.lazy(data-src='img/photos/5.jpg', alt='photo5')
 
-        .slider__previews.xs-hidden
-          .slider__preview
+        div.slider__previews.xs-hidden
+          div.slider__preview
             img(src='img/photos/small/1.jpg', alt='')
-          .slider__preview
+          div.slider__preview
             img(src='img/photos/small/2.jpg', alt='')
-          .slider__preview
+          div.slider__preview
             img(src='img/photos/small/3.jpg', alt='')
-          .slider__preview
+          div.slider__preview
             img(src='img/photos/small/4.jpg', alt='')
-          .slider__preview
+          div.slider__preview
             img(src='img/photos/small/5.jpg', alt='')
 
         button.slider-button.prevArrow
