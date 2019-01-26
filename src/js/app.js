@@ -62,8 +62,4 @@ $(function() {
   $('.popup-close').on("click", function(){
     $('.overlay').hide();
   })
-
-  $('.overlay:not(.popup)').on("click", function(){
-    $('.overlay').hide();
-  })
 });
