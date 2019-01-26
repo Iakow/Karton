@@ -1,10 +1,7 @@
 .contacts
   position: relative
   overflow: hidden
-  >ymaps
-    //margin-left: -3%
-    margin-top: -40px
-    //margin-bottom: -60px
+  
   
 .contacts-card
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
@@ -37,12 +34,21 @@
     top: 46px
     left: 33px
 
+.Ymap
+  height: 660px
+  background: #fff url(../img/Ymap.png) center no-repeat
+  >ymaps
+    //margin-left: -3%
+    margin-top: -40px
+    //margin-bottom: -60px
+
 @media (max-width: 576px)
   .contacts
     >ymaps
       margin: 0
 
   .contacts-card
+    box-shadow: none
     position: static
     text-align: center
     padding: 36px 0 28px 0
@@ -53,4 +59,9 @@
       line-height: 24px
     &__text
       font-size: 14px
+
+  .Ymap
+    height: 450px
+    margin-top: 20px
+    background-position: -650px -50px
       
