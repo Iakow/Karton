@@ -3,7 +3,7 @@ $(function() {
   $('.lazy').Lazy();
 
   new WOW({
-    mobile: false
+    mobile: true
   }).init();
 
   $('.slider__view').slick({
