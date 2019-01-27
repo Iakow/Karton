@@ -23,7 +23,7 @@ function buildLibsJS() {
       .pipe(gulp.dest('src/js'));
 };
 
-function builsLibsCss() {
+function buildLibsCss() {
   console.log('build css');
   return gulp.src([
       //'src/libs/normalize-css/normalize.css',
@@ -33,12 +33,12 @@ function builsLibsCss() {
       'src/libs/slick-carousel/slick/slick-theme.css',
       'src/libs/fancybox/dist/jquery.fancybox.css'
       ], { allowEmpty: true })
-      .pipe(concat('libs.css'))
+      .pipe(concat('libs.min.css'))
       .pipe(cssnano())
       .pipe(gulp.dest('src/css'));
 };
 
-function serve (cb) {
+function serve (done) {
   browserSync.init({
     server: {
       baseDir: "./src"
@@ -49,7 +49,7 @@ function serve (cb) {
   gulp.watch('src/js/*.js').on('change', browserSync.reload);
   gulp.watch('src/*.html').on('change', browserSync.reload);
 
-  cb();
+  done();
 }
 
 function goSass () {
@@ -64,25 +64,28 @@ function goSass () {
 
 function goPug () {
   return gulp.src('src/pug/index.pug')
-        .pipe(pug({pretty: true}))
+        .pipe(pug(/* {pretty: true} */))
         .pipe(gulp.dest('src'))
         .pipe(browserSync.stream());
 }
 
 function cleanDist () {
-  return gulp.src('dist/', {read: false})
+  return gulp.src('dist/*', { allowEmpty: true })
          .pipe(del());
 }
 
-function buldDist (cb) {
+function buldDist (done) {
   gulp.src([
-    'src/css/style.css',
-    'src/css/libs.css'
+    'src/css/style.min.css',
+    'src/css/libs.min.css'
     ])
   .pipe(gulp.dest('dist/css'))
 
   gulp.src('src/fonts/**/*')
   .pipe(gulp.dest('dist/fonts'))
+
+  gulp.src('src/img/**/*')
+  .pipe(gulp.dest('dist/img'))
 
   gulp.src('src/js/**/*')
   .pipe(gulp.dest('dist/js'))
@@ -90,8 +93,10 @@ function buldDist (cb) {
   gulp.src('src/*.html')
   .pipe(gulp.dest('dist'));
 
-  cb();
+  done();
 }
 
-exports.go = gulp.series(gulp.parallel(builsLibsCss, buildLibsJS, goPug, goSass), serve);
+exports.go = gulp.series(gulp.parallel(goPug, goSass), serve);
 exports.dist = gulp.series(cleanDist, buldDist);
+exports.buildLibs = gulp.parallel(buildLibsJS, buildLibsCss);
+exports.clean = cleanDist;
